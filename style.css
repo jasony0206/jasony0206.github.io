@@ -5,3 +5,10 @@
 .center {
 	margin: 0 auto;	
 }
+
+.carousel-caption {
+	top: 4em;
+    bottom: auto;
+    text-align: left;
+    left: 5%;
+}
