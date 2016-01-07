@@ -7,8 +7,15 @@
 }
 
 .carousel-caption {
-	top: 4em;
+	top: 3em;
     bottom: auto;
     text-align: left;
     left: 5%;
+    font-size: 2em;
+    font-family: arial;
+    width: auto;
+}
+
+.carousel-caption h2 {
+	font-size: 1.8em;
 }
