@@ -19,3 +19,15 @@
 .carousel-caption h2 {
 	font-size: 1.8em;
 }
+
+.col-lg-4 {
+	//background-color: yellow;
+}
+
+.center {
+	text-align: center;
+}
+
+.about-me-icon {
+	width: 8em;	
+}
