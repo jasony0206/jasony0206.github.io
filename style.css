@@ -1,3 +1,7 @@
+p {
+	font-size: 1.2em;
+}
+
 .first-row {
 	margin-top: 4em;
 }
@@ -34,4 +38,16 @@
 
 .top-bottom-margin {
 	margin: 3em 0em;
+}
+
+#experience {
+	padding-top: 8em;
+}
+
+.experience-logo {
+	width: 8em;
+}
+
+#experience h3 {
+	display: inline;
 }
