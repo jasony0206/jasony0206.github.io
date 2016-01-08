@@ -24,24 +24,21 @@ p {
 	font-size: 1.8em;
 }
 
-.col-lg-4 {
-	//background-color: yellow;
-}
-
 .center {
 	text-align: center;
+}
+
+.section {
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 
 .about-me-icon {
 	width: 8em;	
 }
 
-.top-bottom-margin {
-	margin: 3em 0em;
-}
-
-#experience {
-	padding-top: 8em;
+#about {
+	background-color: #f5f5f5;
 }
 
 .experience-logo {
