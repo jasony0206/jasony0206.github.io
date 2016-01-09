@@ -8,13 +8,13 @@
   <title>Jason Yoon</title>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-	<!-- Fixed navbar -->
+  <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -44,7 +44,7 @@
       <div class="item active">
       <img src="pic/bigsur_waist_above.jpg" alt="" class="img-responsive">
         <div class="carousel-caption">
-          <h2>HI, I'M <b>JASON YOON</b></h2>I code, jam, and play
+          <h2>HI, I'M <b>JASON YOON</b></h2>I code, jam, and play.
         </div>
       </div>
     </div>
@@ -52,8 +52,8 @@
 
   <!-- About -->
   <div id="about" class="section">
-    <div class="container center">
-      <h1 class="center section-title"><b>ABOUT</b></h1>
+    <div class="container text-centered">
+      <h1 class="text-centered section-title"><b>ABOUT</b></h1>
       <div class="row">
         <div class="col-lg-4">
           <img class="about-me-icon" src="icon/programming2.png" alt="programming icon">
@@ -68,7 +68,7 @@
         <div class="col-lg-4">
           <img class="about-me-icon" src="icon/question30.png" alt="question icon">
           <h3>JUST ME</h3>
-          <p>I love good food, pictures, and movies, and enjoy playing basketball and pool. I speak English, Korean, and limited Japanese. I like going out with friends and also staying in listening to music or watching tv shows.</p>
+          <p>I love good food, pictures, movies, traveling, and enjoy playing basketball and pool. I speak English, Korean, and limited Japanese. I like going out with friends and also staying in listening to music or watching tv shows.</p>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
   <!-- Experience -->
   <div id="experience" class="section">
     <div class="container">
-      <h1 class="center section-title"><b>EXPERIENCE</b></h1>
+      <h1 class="text-centered section-title"><b>EXPERIENCE</b></h1>
       <!-- Ticketmaster -->
       <div class="row experience-entry">
         <div class="col-lg-2">
@@ -126,35 +126,91 @@
     </div>
   </div><!-- after Experience -->
 
+  <!-- Interests -->
   <div id="interests" class="section">
-    <div class="row">
-      <div class="col-lg-10 col-centered">
-        <h1 class="center section-title">INTERESTS</h1>
-        <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#home">Guitar</a></li>
-          <li><a data-toggle="tab" href="#menu1">Singing</a></li>
-          <li><a data-toggle="tab" href="#menu2">Drawing</a></li>
-          <li><a data-toggle="tab" href="#menu3">Basketball</a></li>
-          <li><a data-toggle="tab" href="#menu3">Video Production</a></li>
-          <li><a data-toggle="tab" href="#menu3">3D CAD</a></li>
-        </ul>
-
-        <div class="tab-content">
-          <div id="home" class="tab-pane fade in active">
-            <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="container">
+      <h1 class="text-centered section-title"><b>INTERESTS</b></h1>
+      <div class="panel-group" id="accordion">
+        <!-- Guitar -->
+        <div class="panel panel-default">
+          <div class="panel-heading text-centered">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+              Guitar</a>
+            </h4>
           </div>
-          <div id="menu1" class="tab-pane fade">
-            <h3>Menu 1</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <iframe class="pull-left framed-pic" width="420" height="315" src="https://www.youtube.com/embed/NyZKeKTazhE" frameborder="0" allowfullscreen></iframe>
+              <p>I have been playing the guitar for about 7 years now. I first started learning electric guitar in middle school so I could play those Led Zeppelin songs I used to love back then. After a few years, I expanded my interest onto acoustic guitars as well. I was in an amateur rock band with 4 friends of mine, and we usually played songs by bands such as Radiohead, Muse, and Green Day. I spent a bit of time learning jamming in blues. I have not been as active in college, mainly due to the living situation and time constraints, but I still very much enjoy permorming music with other people when I can. Some of my favorite bands include Radiohead, the Beatles, Pink Floyd, AC/DC, Guns N Roses, and Muse. If, by any chance, you are interested in watching more videos of my guitar playing, feel free to drop by my <a href='https://www.youtube.com/user/J0206Y/videos'><b>youtube channel</b></a>.</p>
+            </div>
           </div>
-          <div id="menu2" class="tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <!-- Singing -->
+        <div class="panel panel-default">
+          <div class="panel-heading text-centered">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+              Singing</a>
+            </h4>
           </div>
-          <div id="menu3" class="tab-pane fade">
-            <h3>Menu 3</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <iframe class='pull-left framed-pic' width="450" height="253" src="https://www.youtube.com/embed/cqkzpwodxaQ" frameborder="0" allowfullscreen></iframe>
+              <p>The first time I had fun singing was when I was practicing with my classmates for a choir competition in middle school. After that, I started going to karaoke with my friends pretty often. Since I started learning acoustic guitar, my biggest hobby has been playing guitar and singing together. Many of my favorite tunes to sing are by bands like Travis or Radiohead. I also enjoy writing snippets of my own, so I have been working on a couple of songs for fun. If you are interested in watching more videos, feel free to drop by my <a href='https://www.youtube.com/user/J0206Y/videos'><b>youtube channel</b></a>.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Drawing -->
+        <div class="panel panel-default">
+          <div class="panel-heading text-centered">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+              Drawing</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <img src="pic/leo.jpg" class="pull-left framed-pic img-responsive" alt="Drawing of Leo">
+              <p>Drawing is the oldest hobby of mine. I used to attend an art studio as a little kid, and I spent a lot of time doodling dinosaurs with my dad. In fact, when I first started going to elementary school, I didn't know how to befriend strangers, so I made new friends by drawing them pokemons. As a kid, I was completely obsessed with mythical creatures and monsters, and now I am more interested in portraits and modern artworks.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Basketball -->
+        <div class="panel panel-default">
+          <div class="panel-heading text-centered">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+              Basketball</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <img src="pic/basketball.jpg" class="pull-left framed-pic img-responsive" alt="Basketball picture">
+              <p>Basketball is hands down my favorite sports. My older brother used to drag me out to play with his friends, and I picked it up in middle school. I was in JV basketball in 9th grade, and played games pretty much everyday throughout my entire high school. I still enjoy playing pikcup games.  </p>
+            </div>
+          </div>
+        </div>
+        <!-- Video Production -->
+        <div class="panel panel-default">
+          <div class="panel-heading text-centered">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+              Video Production</a>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">
+              <iframe class='framed-pic' width="450" height="253" src="https://www.youtube.com/embed/L_suK1se8ec" frameborder="0" allowfullscreen></iframe>
+              <p>Along with working with music, I like filming and editing videos too. I have worked on projects including:</p>
+              <ul class="list-group">
+                <li class="list-group-item">Public Service Announcement video on global water crisis</li>
+                <li class="list-group-item">Stop-motion colored pencil commercial, created from 1000+ still images of a huge drawing</li>
+                <li class="list-group-item">Music video for "While My guitar Gently Sweeps" by the Beatles</li>
+                <li class="list-group-item">Documentary of student volunteers at a hospital</li>
+              </ul>
+              <p>I learned basics of cinematography and camera-directing, and the video above is a water crisis PSA I worked on with a friend of mine. All the footage and music are work of our own.</p>
+            </div>
           </div>
         </div>
       </div>
