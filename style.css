@@ -46,7 +46,7 @@ p {
 	width: 8em;	
 }
 
-#experience {
+#experience, #contact {
 	background-color: #f5f5f5;
 }
 
@@ -72,5 +72,5 @@ p {
 }
 
 .contact-logo {
-	width: 9em;
+	width: 7em;
 }
