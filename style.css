@@ -11,7 +11,7 @@ p {
 }
 
 .carousel-caption {
-	top: 3em;
+	top: 8%;
     bottom: auto;
     text-align: left;
     left: 5%;
@@ -22,6 +22,7 @@ p {
 
 .carousel-caption h2 {
 	font-size: 1.8em;
+	margin-bottom: 0;
 }
 
 .text-centered {
@@ -46,7 +47,7 @@ p {
 	width: 8em;	
 }
 
-#experience, #contact {
+#about, #projects, #contact {
 	background-color: #f5f5f5;
 }
 
@@ -73,4 +74,8 @@ p {
 
 .contact-logo {
 	width: 7em;
+}
+
+.modal-footer {
+	margin-top: 0;
 }
