@@ -75,3 +75,7 @@ p {
 .contact-logo {
 	width: 7em;
 }
+
+.modal-footer {
+	margin-top: 0;
+}

@@ -135,7 +135,7 @@
         <!-- in kitchen -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <a href="#" data-toggle="modal" data-target="#myModal">
+            <a href="#" data-toggle="modal" data-target="#inkitchen-modal">
               <img src="pic/inkitchen.jpg" class="img-responsive" alt="in kitchen">
             </a>
             <div class="caption">
@@ -147,7 +147,7 @@
         <!-- micromouse -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <a href="#" data-toggle="modal" data-target="#myModal">
+            <a href="#" data-toggle="modal" data-target="#micromouse-modal">
               <img src="pic/micromouse.jpg" class="img-responsive" alt="micromouse">
             </a>
             <div class="caption">
@@ -159,7 +159,7 @@
         <!-- bug blast -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <a href="#" data-toggle="modal" data-target="#myModal">
+            <a href="#" data-toggle="modal" data-target="#bugblast-modal">
               <img src="pic/bugblast.jpg" class="img-responsive" alt="bug blast">
             </a>
             <div class="caption">
@@ -185,7 +185,7 @@
         <!-- digital box app -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <a href="#" data-toggle="modal" data-target="#myModal">
+            <a href="#" data-toggle="modal" data-target="#digital-box-modal">
               <img src="pic/digital-box.jpg" class="img-responsive" alt="digital box app">
             </a>
             <div class="caption">
@@ -197,7 +197,7 @@
         <!-- earthquake locator -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <a href="#" data-toggle="modal" data-target="#myModal">
+            <a href="#" data-toggle="modal" data-target="#earthquake-locator-modal">
               <img src="pic/earthquake-locator.jpg" class="img-responsive" alt="earthquake locator">
             </a>
             <div class="caption">
@@ -208,39 +208,157 @@
         </div>
       </div>
       <div class="row">
-        <!-- database index -->
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <a href="#" class="btn btn-primary" role="button">View more</a>
-            <div class="caption">
-              <h4>B+ Tree Database Index</h4>
-              <p>B+ tree index for a movie database (class project at UCLA)</p>
-            </div>
-          </div>
-        </div>
         <!-- rocket project avionics -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <a href="#" class="btn btn-primary" role="button">View more</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rocket-project-modal">View more</button>
             <div class="caption">
               <h4>UCLA Rocket Project Avionics</h4>
               <p>Design, build, and test the avionics of payload - a deployable glider</p>
             </div>
           </div>
         </div>
+        <!-- movie database webapp -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="#" data-toggle="modal" data-target="#movie-database-webapp-modal">
+              <img src="pic/movie-db-webapp.jpg" class="img-responsive" alt="movie database webapp">
+            </a>
+            <div class="caption">
+              <h4>Movie Database Search</h4>
+              <p>B+ database index &amp; Web app for searching and updating a movie database (class project at UCLA)</p>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
 
-      <!-- Modal -->
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+      <!-- Modals -->
+      <!-- in kitchen modal -->
+      <div id="inkitchen-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
+              <h4 class="modal-title">In Kitchen</h4>
             </div>
             <div class="modal-body">
-              <p>Some text in the modal.</p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_-RJS9btzd0" frameborder="0" allowfullscreen></iframe>
+              <p>In Kitchen is a web application that helps you decide what to do with those leftover ingredients in your fridge. You can list ingredients you have, and it will generate a list of dishes with corresponding recipes that include specified ingredients. Each ingredient you type in will turn into a red tag, which you can get rid of by simply clicking the close button. When ready, click "find recipes!" to have a good meal and clean up your fridge. We first parse the user input string into an array of keywords, and use Yumly API to get recipe data. This was a 4-member team project at HackSC '14, and I worked mostly on the UI, parsing inputs, and integrating parsed output of server calls into HTML contents.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- micromouse modal -->
+      <div id="micromouse-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Micromouse</h4>
+            </div>
+            <div class="modal-body">
+              <img src="pic/micromouse.jpg" class="img-responsive" alt="micromouse">
+              <p>Micromouse is an autonomous maze-solving robot competition. I am currently working with 3 other peers, and we are in charge of the entire design and implementation process. This mouse first explores the maze thoroughly, gathering information about the walls by mainly utilizing IR sensors. Then, with the collected information, it finds a shortest path to the center of the maze. On the hardware level, this involves designing the circuit, mounting and soldering elements, and calibrating sensors. On the software level, we mainly focus on optimizing data structures, bit-level optimization (MCU memory: 64KB), and implementing maze-solving algorithms.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bug blast modal -->
+      <div id="bugblast-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Bug Blast</h4>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Bv4OlzKQNgc" frameborder="0" allowfullscreen></iframe>
+              <p>BugBlast is a maze-based 2D video game. Player can place timer bombs to destroy walls and defeat monsters present in the maze to proceed to the next level with more challenging difficulty. This was a class project in which specifications and basic framework for ticks and graphics were provided. I first organized the class hierarchy following the principles of object-oriented programming, and implemented specifics of each class incrementally from base classes to various derived classes, leveraging inheritance and supporting polymorphism. One of the monster classes had a player-chasing attack mechanism, which I implemnted with a breadth-first search based maze-solving algorithm.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- digital box modal -->
+      <div id="digital-box-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Rocket Launch Dashboard</h4>
+            </div>
+            <div class="modal-body">
+              <img src="pic/digital-box.jpg" class="img-responsive" alt="micromouse">
+              <p>As part of AIAA (The American Institute of Aeronautics and Astronautics) UCLA branch, I am participating in digitalizing an analog relay system for controls and data acquisition of a rocket launch. In particular, I am building a Java application that logs and plots sensor data in real-time. As the Electronics team of UCLA Rocket Project, we believe this project will not only help reduce the amount of noise that was present in the previous analog system (due to transmission via very long cables) but also help us analyze the launch sequence and learn more from it.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- earthquake locator modal -->
+      <div id="earthquake-locator-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Earthquake Locator</h4>
+            </div>
+            <div class="modal-body">
+              <img src="pic/earthquake-locator.jpg" class="img-responsive" alt="micromouse">
+              <p>Earthquake Locator provides a realtime visualization of earthquake data around the world. The data can be filtered by the time of the earthquake and the magnitude. It is still under development, and I am currently working on the implementation of location based search. The data is provided by USGS, and it is updated every 5 minutes. Foundation framework was utilized.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- rocket project modal -->
+      <div id="rocket-project-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Rocket Project Avionics</h4>
+            </div>
+            <div class="modal-body">
+              <p>UCLA Rocket Project is a student-led project that involves designing, building, testing, and finally launching the rocket at an annual competition. It consists of Propulsion, Structures and Electronics teams. As part of the Electronics team, I am contributing to designing, building, and testing the avionics of the payload - a glider which is deployed from the rocket during its flight at approximately 10,000 ft altitude. We aim to automate the glider's flight control and thereby successfully retrieving the glider near the launch site of the rocket.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- movie database webapp modal -->
+      <div id="movie-database-webapp-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Movie Database Search Webapp</h4>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/mJUDMNhdLPU" frameborder="0" allowfullscreen></iframe>
+              <p>My partner and I implemented a B+ Tree Index in C++ for a movie database as a class project at UCLA (CS143). It supports loading tuples from input files, select queries on attributes and aggregates with conditions. Insert functions are implemented recursively in order to handle overflows at both leaf and non-leaf levels. It is a generic template that works for any N less than 82 (this limitation arises due to the disk sector size of the simulator we used). It significantly reduced the run-time of queries: for a table of 12,000 tuples, we reduced the disk accesses from 12,000 reads to 5 reads.<br>Then, we built a web app that supports search and update features to mySQL movie database. It is written in PHP. The video above is a demo of the app.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
