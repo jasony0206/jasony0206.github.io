@@ -132,6 +132,18 @@
       <h1 class="text-centered section-title"><b>PROJECTS</b></h1>
       <p>Click the image to see more detailed description of a project.</p>
       <div class="row">
+        <!-- on the way -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="#" data-toggle="modal" data-target="#ontheway-modal">
+              <img src="pic/on-the-way-results.png" class="img-responsive" alt="on the way">
+            </a>
+            <div class="caption">
+              <h4>On The Way</h4>
+              <p>Find restaurants & more that people love, along your travel route</p>
+            </div>
+          </div>
+        </div>
         <!-- in kitchen -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
@@ -156,6 +168,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
         <!-- bug blast -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
@@ -168,8 +182,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
         <!-- portfolio website -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
@@ -194,6 +206,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
         <!-- earthquake locator -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
@@ -206,8 +220,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
         <!-- rocket project avionics -->
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
@@ -231,9 +243,51 @@
           </div>
         </div>
       </div>
-      </div>
 
       <!-- Modals -->
+      <!-- on the way modal -->
+      <div id="ontheway-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">On The Way</h4>
+            </div>
+            <div class="modal-body">
+              <img src="pic/on-the-way-results.png" class="img-responsive" alt="on the way">
+              <p>
+                On The Way helps you find restaurants and more along your travel route. Given
+                where you are traveling from and to, On The Way find the top 25 restaurants and
+                businesses that are highly rated along the route. The query results include
+                summary information about the businesses and direct links to the associated Yelp
+                page, as well as travel information, including direct links to Google Maps
+                directions.
+              </p>
+              <p>
+                The backend serves a Ruby on Rails API that integrates 3 different APIs:
+                Google Maps Directions, Google Maps Distance Matrix, and Yelp Search API.
+                Directions API is used for, of course, finding the route information from origin to
+                destination, after which Yelp Search API is utilized to look up businesses around
+                sample coordinates along the route. Finally, Distance Matrix is used to attain 
+                travel information such as duration and distance of each travel, hitting the 
+                restaurant as a waypoint. The API is implemented using Ruby Grape gem, and tested
+                with RSpec.
+              </p>
+              <p>
+                The frontend is a React JS app that is separately built and deployed from the
+                backend. It utilizes Google Maps Javascript API in order to display query results
+                on an interactive map, as well as Google Maps Places Autocomplete API to help
+                search for places and input them as well formatted addresses. Webpack is utilized
+                in the process of bundling the project.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- in kitchen modal -->
       <div id="inkitchen-modal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
