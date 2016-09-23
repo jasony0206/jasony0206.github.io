@@ -83,3 +83,13 @@ p {
 .modal-title {
   display: inline-block;
 }
+
+.thumbnail .img-responsive {
+  max-height: 200px;
+}
+
+.mobile-screenshot {
+  height: 450px;
+  display: inline-block;
+  border: 1px solid #e6e6ff;
+}
